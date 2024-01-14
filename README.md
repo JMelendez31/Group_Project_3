@@ -1,6 +1,7 @@
 Jennifer Melendez
 Elisabeth Villarreal
 Scott Malone
+
 Project Proposal 
 
 Our topic of choice is the “World Happiness Report”.
