@@ -128,9 +128,6 @@ ALTER TABLE year_2019
 ADD year INTEGER
 DEFAULT 2019;
 
-SELECT * FROM year_2015
-UNION
-SELECT * FROM year_2019 order by country_region;
 
 
 
