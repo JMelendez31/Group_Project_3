@@ -3,6 +3,7 @@ DROP TABLE IF EXISTS year_2016;
 DROP TABLE IF EXISTS year_2017;
 DROP TABLE IF EXISTS year_2018;
 DROP TABLE IF EXISTS year_2019;
+DROP TABLE IF EXISTS happiness_merged;
 
 CREATE TABLE year_2015 (
   Country VARCHAR(45) NOT NULL,
@@ -75,6 +76,30 @@ CREATE TABLE year_2019 (
 );
 
 
+CREATE TABLE happiness_merged (
+	Country VARCHAR(45) NOT NULL,
+	Region VARCHAR(45) NULL,
+	Happiness_Rank INTEGER NOT NULL,
+	Happiness_Score DECIMAL NOT NULL,
+	Standard_Error DECIMAL NULL,
+	Lower_Confidence_Interval DECIMAL NULL,
+	Upper_Confidence_Interval DECIMAL NULL,
+	GDP_per_capita DECIMAL NOT NULL,
+	Family DECIMAL NULL,
+	Social_Support DECIMAL NULL,
+	Life_Expectancy DECIMAL NOT NULL,
+	Freedom DECIMAL NOT NULL,
+	Trust_Gov_Corruption DECIMAL NOT NULL,
+	Generosity DECIMAL NOT NULL,
+	Dystopia_Residual DECIMAL NULL,
+	Year INTEGER NOT NULL
+	
+);
+
+
+
+
+
 ALTER TABLE year_2015
 ADD year INTEGER
 DEFAULT 2015;
@@ -103,6 +128,10 @@ ALTER TABLE year_2019
 ADD year INTEGER
 DEFAULT 2019;
 
-SELECT * FROM year_2019;
+SELECT * FROM year_2015
+UNION
+SELECT * FROM year_2019 order by country_region;
+
+
 
 
