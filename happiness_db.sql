@@ -78,7 +78,7 @@ CREATE TABLE year_2019 (
 
 CREATE TABLE happiness_merged (
 	Country VARCHAR(45) NOT NULL,
-	Region VARCHAR(45) NULL,
+	Region VARCHAR(45) NOT NULL,
 	Happiness_Rank INTEGER NOT NULL,
 	Happiness_Score DECIMAL NOT NULL,
 	Standard_Error DECIMAL NULL,
