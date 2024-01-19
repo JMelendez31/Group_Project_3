@@ -15,7 +15,6 @@ Research questions such as "Which regions are the most and least happy?" led us 
 7. In the terminal, run "app.js". You should see a message that the server is running.
 
 ## Ethical Considerations Made in the Project:
-At least one paragraph summarizing efforts for ethical considerations made in the project
 The World Happiness Report contains scores and rankings from the Gallup World Poll. The happiness score is based on the Cantrill ladder, which asks respondents to think of a ladder with the best possible life being a 10 and the worst possible life being a 0 and to rate their current lives on that scale. The surveys are conducted through telephone coverage, reaching at least 80% of the population. However, in developing countries, Gallup gathers their data through face-to-face interviews. The data was consensually collected, which was an ethical consideration throughout the research.
 
 ## References for the Data Sources:
