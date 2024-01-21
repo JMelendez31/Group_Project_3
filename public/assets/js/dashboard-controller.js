@@ -1,7 +1,13 @@
+let lineChartInstance;
+let barChartInstance;
+
 // Function to create a multi-line chart
 function createLineChart(data) {
     const ctx = document.getElementById('myAreaChart').getContext('2d');
-    new Chart(ctx, {
+    if(lineChartInstance){
+        lineChartInstance.destroy();
+    }
+    lineChartInstance = new Chart(ctx, {
         type: 'line',
         data: data,
         options: {
@@ -23,7 +29,11 @@ function createLineChart(data) {
 // Function to create a bar chart
 function createBarChart(data) {
     const ctx = document.getElementById('myBarChart').getContext('2d');
-    const barChart = new Chart(ctx, {
+    if(barChartInstance) {
+        barChartInstance.destroy()
+
+    }
+        barChartInstance = new Chart(ctx, {
         type: 'bar',
         data: data,
         options: {

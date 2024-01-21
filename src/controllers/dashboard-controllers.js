@@ -1,6 +1,6 @@
 const db = require('../../db');
 
-// Function to query the database for the line chart data
+// Functions to query the database for the line chart data
 const getChartData = async (req, res) => {
     try {
         const regions = ['Sub-Saharan Africa', 'Middle East and Northern Africa', 'Western Europe', 'Australia and New Zealand', 'Latin America and Caribbean', 'Southeastern Asia', 'Central and Eastern Europe', 'Eastern Asia', 'Southern Asia', 'North America'];
@@ -118,7 +118,7 @@ const getChartData3 = async (req, res) => {
     }
 };
 
-// Function to query the database for the bar chart data
+// Functions to query the database for the bar chart data
 const getBarChartData = async (req, res) => {
     try {
         const regions = ['Sub-Saharan Africa', 'Middle East and Northern Africa', 'Western Europe', 'Australia and New Zealand', 'Latin America and Caribbean', 'Southeastern Asia', 'Central and Eastern Europe', 'Eastern Asia', 'Southern Asia', 'North America'];
@@ -222,7 +222,7 @@ const getBarChartData3 = async (req, res) => {
     }
 };
 
-// Function to query the database for the table data
+// Functions to query the database for the table data
 const getTableData = async (req, res) => {
     try {
         const tableData = await db.query(`
@@ -307,7 +307,7 @@ const getTableData6 = async (req, res) => {
         res.status(500).json({error: 'Internal Server Error'});
     }
 };
-// Function to provide a random color to a region or country, etc.
+// Functions to provide a random color to a region or country, etc.
 function getRandomColor() {
     const letters = '0123456789ABCDEF';
     let color = '#';
