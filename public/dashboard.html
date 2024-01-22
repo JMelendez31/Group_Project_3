@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
@@ -121,9 +122,14 @@
                                     <div class="card-header">
                                         <i class="fas fa-globe-europe me-1"></i>
                                         Chloropleth Map
+                                        <select id="mapDropdown" class="float-end">
+                                            <!-- Options for Table -->
+                                            <option value="2015-happiness-map-data">2015 Happiness</option>
+                                            <option value="2016-happiness-map-data">2016 Happiness</option>
+                                        </select>
                                     </div>
                                     <div class="card-body">
-                                        <div id="chloroplethMap" style="height: 400px;"></div>
+                                        <div id="chloroplethMap" style="height: 600px;"></div>
                                     </div>
                                 </div>
                             </div> 
@@ -163,7 +169,7 @@
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
-                                DataTable Example
+                                Data Tables
                                 <select id="tableDropdown" class="float-end">
                                     <!-- Options for Table -->
                                     <option value="2015-table-data">2015</option>
@@ -176,12 +182,8 @@
                             </div>
                             <div class="card-body">
                                 <table id="datatablesSimple">
-                                    <thead>
-                                    </thead>
-                                    <tfoot>
-                                    </tfoot>
-                                    <tbody>  
-                                    </tbody>
+                                    <thead></thead>
+                                    <tbody></tbody>
                                 </table>
                             </div>
                         </div>
@@ -201,9 +203,10 @@
                 </footer>
             </div>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" crossorigin=""></script>
         <!-- <script src="assets/js/datatables-demo.js"></script> -->
         <!-- <script src="assets/js/datatables-simple-demo.js"></script> -->
         <script src="assets/js/scripts.js"></script>

@@ -15,5 +15,6 @@ router.get('/2016-table-data', dashboardController.getTableData3)
 router.get('/2017-table-data', dashboardController.getTableData4)
 router.get('/2018-table-data', dashboardController.getTableData5)
 router.get('/2019-table-data', dashboardController.getTableData6)
-
+router.get('/2015-happiness-map-data', dashboardController.getMapData)
+router.get('/2016-happiness-map-data', dashboardController.getMapData2)
 module.exports = router;

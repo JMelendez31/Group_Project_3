@@ -118,6 +118,38 @@ const getChartData3 = async (req, res) => {
     }
 };
 
+const getMapData = async (req, res) => {
+    try{
+        const result = await db.query(`
+        SELECT
+            country,
+            happiness_score
+        FROM
+            year_2015
+        `);
+        res.json(result.rows);
+    } catch (error) {
+        console.error('Error fetching map data:', error);
+        res.status(500).send('Internal Server Error');
+    }
+}
+
+const getMapData2 = async (req, res) => {
+    try{
+        const result = await db.query(`
+        SELECT
+            country,
+            happiness_score
+        FROM
+            year_2016
+        `);
+        res.json(result.rows);
+    } catch (error) {
+        console.error('Error fetching map data:', error);
+        res.status(500).send('Internal Server Error');
+    }
+}
+
 // Functions to query the database for the bar chart data
 const getBarChartData = async (req, res) => {
     try {
@@ -331,7 +363,9 @@ const dashboardController = {
     getTableData4,
     getTableData5,
     getTableData6,
-    getRandomColor
+    getRandomColor,
+    getMapData,
+    getMapData2
 };
 
 module.exports = dashboardController
