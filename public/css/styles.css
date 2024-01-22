@@ -302,7 +302,13 @@ kbd kbd {
 figure {
   margin: 0 0 1rem;
 }
-
+img {
+  width: 500px;
+  height: 500px;
+  vertical-align: middle;
+  object-fit: cover;
+  margin: 0 auto;
+}
 img,
 svg {
   vertical-align: middle;
