@@ -7,12 +7,10 @@ Research questions such as "Which regions are the most and least happy?" led us 
 
 ## How to Install and Interact with the Project:
 1. Clone the repository to your directory.
-2. Install dependencies such as Express and PG.
-3. Open your terminal.
-4. Navigate to the app's directory.
-5. Run "npm install" for required dependencies.
-6. Run the node server.
-7. In the terminal, run "app.js". You should see a message that the server is running.
+2. Install dependencies by typing the following command in your terminal "npm I". (Make sure you're at the root of the project)
+3. Create your .env file for your database connection variables.
+4. Import the data via the CSV or directly from Kaggle.com to your database.
+5. In the terminal, run "server.js". You should see a message that the server is running.
 
 ## Ethical Considerations Made in the Project:
 The World Happiness Report contains scores and rankings from the Gallup World Poll. The happiness score is based on the Cantrill ladder, which asks respondents to think of a ladder with the best possible life being a 10 and the worst possible life being a 0 and to rate their current lives on that scale. The surveys are conducted through telephone coverage, reaching at least 80% of the population. However, in developing countries, Gallup gathers their data through face-to-face interviews. The data was consensually collected, which was an ethical consideration throughout the research.
