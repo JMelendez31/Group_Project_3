@@ -127,8 +127,8 @@ function createChloroplethMap(data) {
 function getColorForValue(value) {
     // Define the color based on the value
     // Lower values are more red, higher values are more green
-    if (value >= 7) return '#008000'; // Strong green for high values
-    if (value >= 6) return '#7CFC00'; // Lighter green
+    if (value >= 7) return '#7CFC00'; // Strong green for high values
+    if (value >= 6) return '#008000'; // Lighter green
     if (value >= 5) return '#FFFF00'; // Yellow for middle values
     if (value >= 4) return '#FFA500'; // Orange
     return '#FF0000'; // Red for low values
